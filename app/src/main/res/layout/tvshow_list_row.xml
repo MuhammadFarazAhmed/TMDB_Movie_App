@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:id="@+id/fl_TVShow_Layout">
+
+
+    <ImageView
+        android:id="@+id/IvTvshowListRow_TvShowImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/poster"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scrim_gradeint"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_above="@+id/tvShowListRow_ReleaseDate">
+
+
+    <TextView
+        android:id="@+id/tvShowListRow_tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="3"
+        android:text="The Grey"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"/>
+    <ImageView
+        android:id="@+id/IvTVshowListRow_RatingImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/star"
+        android:layout_gravity="center_vertical"
+
+        />
+    <TextView
+        android:id="@+id/tvTVshowListRow_RatingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.2"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tvShowListRow_ReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="3"
+        android:text="The Grey"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:layout_above="@+id/tvTvshowListRow_Genres"/>
+
+    <TextView
+        android:id="@+id/tvTvshowListRow_Genres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="8dp"
+        android:shadowColor="#000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="3"
+        android:text="The Grey"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

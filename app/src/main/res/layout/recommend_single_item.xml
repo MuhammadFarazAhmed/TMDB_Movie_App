@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="200dp"
+        android:layout_marginRight="12dp">
+
+    <ImageView
+        android:transitionName="movieposter"
+        android:id="@+id/iv_recommend_MovieImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/poster" />
+
+     <View
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/scrim_gradeint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/tv_recommend_ReleaseDate"
+        >
+
+        <TextView
+            android:id="@+id/tv_recommend_Moviename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:shadowColor="#000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="3"
+            android:text="The Grey"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:ellipsize="end"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_recommend_ReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_recommend_Genres"
+        android:maxLines="1"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="3"
+        android:text="@string/the_grey"
+        android:textColor="#fffFFF"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_recommend_Genres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:maxLines="2"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.5"
+        android:shadowRadius="3"
+        tools:text="The Grey"
+        android:text="Genres"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+            android:id="@+id/iv_recommend_RatingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/star"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_recommend_RatingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="8.2"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "77346811748",
+    "firebase_url": "https://practicemovieapp.firebaseio.com",
+    "project_id": "practicemovieapp",
+    "storage_bucket": "practicemovieapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77346811748:android:ec1a339b03e5f90e",
+        "android_client_info": {
+          "package_name": "com.example.farazahmed.practicemovieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77346811748-9hk2g98ie2iclprqv6rs1oser60qgij0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.farazahmed.practicemovieapp",
+            "certificate_hash": "698bc9886b228c8ae86de1e2e7474e87db6fad82"
+          }
+        },
+        {
+          "client_id": "77346811748-8r2qmbkdd4tcvo98mh2s2u0en6a621or.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3OUgkKRIMqDaL6Fd_SgN_j7Ia0e5mJYo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77346811748-8r2qmbkdd4tcvo98mh2s2u0en6a621or.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

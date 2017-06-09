@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/rootlayout_moviesdetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.farazahmed.practicemovieapp.Activity.MoviesDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#424242"
+            android:focusableInTouchMode="true">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/imageslider_MovieDetails"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#424242" />
+
+            <LinearLayout
+                android:id="@+id/image_namelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageslider_MovieDetails"
+                android:layout_marginTop="-100dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/iv_movieposter_moviedetails"
+                        android:layout_width="108dp"
+                        android:layout_height="160dp"
+                        android:elevation="10dp"
+                        android:scaleType="centerCrop"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.5"
+                        android:shadowRadius="3"
+                        android:transitionName="movieposter"
+                        tools:src="@drawable/poster" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_moviename_moviedetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:shadowColor="#000000"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.5"
+                            android:shadowRadius="3"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:text="The Grey"
+                            tools:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/moreInfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:shadowColor="#000000"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.5"
+                                android:shadowRadius="3"
+                                android:textColor="#ffffff"
+                                android:textSize="13sp"
+                                tools:text="Release Date :"
+                                tools:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tv_releasedate_moviedetails"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:shadowColor="#000000"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.5"
+                                android:shadowRadius="3"
+                                android:textColor="#ffffff"
+                                android:textSize="13sp"
+                                tools:text="2014-01-15"
+                                tools:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp">
+
+                            <ImageView
+                                android:id="@+id/rate_Movie"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@drawable/empty_star"
+                                android:clickable="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/rate_Movie_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rate This Movie"
+                                android:layout_gravity="center"
+                                android:textColor="#ffffff"
+                                android:layout_marginLeft="8dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_weight=".0002"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/IvTVshowListRow_RatingImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/star"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_ratings_moviedetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:shadowColor="#000000"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.5"
+                            android:shadowRadius="3"
+                            android:textColor="#ffffff"
+                            android:textSize="13sp"
+                            tools:text="8.2/10" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tagline_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_namelayout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_tagline_moviedetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:paddingLeft="10dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="italic"
+                    tools:text="&quot; the tagline of a movie &quot;" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/overview_moviedetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tagline_layout"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Overview"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_overview_moviedetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textColor="#ffffff"
+                    tools:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/trailer"
+                android:layout_below="@+id/overview_moviedetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/trailerbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Watch Trailer"
+                    android:textColor="#ffffff"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/show_fullcast_button"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CastTextview_moviesdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trailer"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/overview_moviedetails"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Movie Cast"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_castlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CastTextview_moviesdetails"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <Button
+                android:id="@+id/showfullcast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_castlist"
+                android:layout_margin="16dp"
+                android:background="@drawable/show_fullcast_button"
+                android:text="Show Full Cast"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:id="@+id/CastTextview_Recommended"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/showfullcast"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/CastTextview_Recommended"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Recommended Movies"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recommendmovies_recyclerview_moviedetails"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/CastTextview_Recommended"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:overScrollMode="never" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

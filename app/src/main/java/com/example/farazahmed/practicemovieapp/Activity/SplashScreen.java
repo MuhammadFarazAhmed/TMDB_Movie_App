@@ -59,7 +59,7 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_splash_screen);
-        
+
 
         logo = (ImageView) findViewById(R.id.logo);
         buttonslayout = (LinearLayout) findViewById(R.id.buttons_layout);
